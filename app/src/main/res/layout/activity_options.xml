@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Options"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/size_button_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+            <RadioButton
+                android:id="@+id/tiny_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tiny"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/small_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="small"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/medium_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Medium"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/large_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="LARGE"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/color_button_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+            <RadioButton
+                android:id="@+id/red_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:buttonTint="#E40B0B"
+                android:text="RED"
+                android:textColor="#E40B0B" />
+
+            <RadioButton
+                android:id="@+id/green_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:buttonTint="#4CAF50"
+                android:text="GREEN"
+                android:textColor="#4CAF50" />
+
+            <RadioButton
+                android:id="@+id/blue_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:buttonTint="#1085E1"
+                android:text="BLUE"
+                android:textColor="#1085E1" />
+
+            <RadioButton
+                android:id="@+id/purple_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:buttonTint="#9C27B0"
+                android:text="PURPLE"
+                android:textColor="#9C27B0" />
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/portal_box"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Portals"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="4dp"
+            android:text="Please Select the Gravity You'd like for the maze"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/save_grav_button" />
+
+        <RadioGroup
+            android:id="@+id/grav_button_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <RadioButton
+                android:id="@+id/earth_grav_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Earth" />
+
+            <RadioButton
+                android:id="@+id/moon_grav_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:checked="false"
+                android:text="Moon" />
+
+            <RadioButton
+                android:id="@+id/jupiter_grav_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Jupiter" />
+
+            <RadioButton
+                android:id="@+id/pluto_grav_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Pluto" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Please Select If You'd Like Portals in the Maze"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grav_button_group" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Please Select Your Ball Color"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/portal_box" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Please Select a Size"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/color_button_group" />
+
+        <Button
+            android:id="@+id/save_grav_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Save Selection"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
